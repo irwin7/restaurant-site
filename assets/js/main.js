@@ -5,7 +5,7 @@ let elNavBtn = document.querySelector('.nav__dark');
 let elBody = document.querySelector('body');
 
 elMenuBtn.addEventListener('click',()=>{
-    elNav.classList.toggle('nav-active');
+    elNav.classList.toggle('show-menu');
 })
 
 elNavBtn.addEventListener('click',()=>{
@@ -15,10 +15,10 @@ elNavBtn.addEventListener('click',()=>{
 window.addEventListener('scroll',()=>{
     console.log(window.scrollY);
     if(window.scrollY > 10){
-        document.querySelector('.l-header').classList.add('fixHead');
+        document.querySelector('.l-header').classList.add('scroll-header');
     }
     if(window.scrollY < 10){
-        document.querySelector('.l-header').classList.remove('fixHead');
+        document.querySelector('.l-header').classList.remove('scroll-header');
     }
     if(window.scrollY < 338){
         removeClass();

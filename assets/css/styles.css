@@ -148,15 +148,9 @@ img{
   width: 100%;
   top: 0;
   left: 0;
-  position: relative;
+  position: fixed;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
-  margin-bottom: 80px;
-}
-
-.fixHead{
-  position: fixed;
-  margin-bottom: 0;
 }
 
 /*========== NAV ==========*/
@@ -181,9 +175,6 @@ img{
     box-shadow: 0 4px 4px rgba(0,0,0,.1);
     border-radius: 0 0 1rem 1rem;
     z-index: var(--z-fixed);
-  }
-  .l-header{
-    margin-bottom: 30px;
   }
 }
 
