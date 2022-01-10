@@ -13,29 +13,30 @@ elNavBtn.addEventListener('click',()=>{
 })
 
 window.addEventListener('scroll',()=>{
+    console.log(window.scrollY);
     if(window.scrollY > 10){
         document.querySelector('.l-header').classList.add('fixHead');
     }
     if(window.scrollY < 10){
         document.querySelector('.l-header').classList.remove('fixHead');
     }
-    if(window.scrollY < 380){
+    if(window.scrollY < 338){
         removeClass();
         elNavItem[0].querySelector('.nav__link').classList.add('active-link');
     }
-    if(window.scrollY > 380 && window.scrollY < 930){
+    if(window.scrollY > 338 && window.scrollY < 878){
         removeClass();
         elNavItem[1].querySelector('.nav__link').classList.add('active-link');
     }
-    if(window.scrollY > 930 && window.scrollY < 1460){
+    if(window.scrollY > 877 && window.scrollY < 1407){
         removeClass();
         elNavItem[2].querySelector('.nav__link').classList.add('active-link');
     }
-    if(window.scrollY > 1460 && window.scrollY < 2737){
+    if(window.scrollY > 1406 && window.scrollY < 2684){
         removeClass();
         elNavItem[3].querySelector('.nav__link').classList.add('active-link');
     }
-    if(window.scrollY > 2737){
+    if(window.scrollY > 2683){
         removeClass();
         elNavItem[4].querySelector('.nav__link').classList.add('active-link');
     }
